@@ -1,3 +1,5 @@
+// 메인화면
+
 package movie;
 
 import java.awt.Color;
@@ -33,7 +35,7 @@ public class page1 extends JFrame{
 		
 		JPanel background = new JPanel() {
 			
-			public void paintComponent(Graphics g)
+			public void paintComponent(Graphics g) {
 			
 			g.drawImage(cgvIcon.getImage(), 0, 0, null);
 			
