@@ -127,10 +127,29 @@ public class Page2 extends JFrame{
         	  
         	  public void actionPerformed(ActionEvent e) {
         		  try {
-        			  if()
-        		  }
-        	  }
-          }
+        			  if((name.getText().equals("") || tel.getText().equals("") 
+                    		  || id.getText().equals("") || pw.getText().equals(""))
+        	                  {
+        	                     JOptionPane.showMessageDialog(null, "저장할 내용을 입력하세요.");		// JOptionPane 팝업창을 보여주는 메소드 입니다.                
+        	                  } else {
+        							  dto = new DTO_Member(); 
+        							  dto.setName(name.getText());
+        							  dto.setTel(tel.getText()); 
+        							  dto.setId(id.getText());
+        							  dto.setPw(pw.getText()); 
+        							  dao.insert(dto);
+        							  JOptionPane.showMessageDialog(null, "회원가입 되셨습니다.");
+        							  dispose();
+        	                	      // System.out.println(name1.getText());
+        	                		}
+        	                     }
+        	                catch (Exception e2) {
+        	                  e2.printStackTrace();
+        	               }
+        	            }
+        	         });
+        		}
+        	}		
         		  
         		  
         		  );
