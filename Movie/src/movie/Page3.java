@@ -58,12 +58,12 @@ public class Page3 extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				try {
-					if(idTextField.getText().contentEquals("")||phonNumTextField.getText().equals("")) {
+					if(idTextField.getText().contentEquals("")||phoneNumTextField.getText().equals("")) {
 						JOptionPane.showMessageDialog(null, "정보를 입력하세요");
 						dispose();
 						
 					}else {					
-						controller.searchPW(idTextField.getText(), phoneTextField.getText());
+						controller.searchPW(idTextField.getText(), phoneNumTextField.getText());
 						dispose();
 					}					
 				}catch(Exception e2){
