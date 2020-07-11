@@ -61,6 +61,7 @@ public class Page3 extends JFrame{
 					if(idTextField.getText().contentEquals("")||phoneNumTextField.getText().equals("")) {
 						JOptionPane.showMessageDialog(null, "정보를 입력하세요");
 						dispose();
+						// equals: 내용 비교
 						
 					}else {					
 						controller.searchPW(idTextField.getText(), phoneNumTextField.getText());
