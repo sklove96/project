@@ -127,6 +127,7 @@ public class Page2 extends JFrame{
         	  
         	  public void actionPerformed(ActionEvent e) {
         		  try {
+        			  //null 체크
         			  if((name.getText().equals("") || tel.getText().equals("") 
                     		  || id.getText().equals("") || pw.getText().equals(""))
         	                  {
@@ -145,22 +146,8 @@ public class Page2 extends JFrame{
         	                     }
         	                catch (Exception e2) {
         	                  e2.printStackTrace();
-        	               }
-        	            }
-        	         });
-        		}
-        	}		
-        		  
-        		  
-        		  );
-
-		
-		
-		
-		
-		
+        	           }
+        	     }
+          });
 	}
-	
-
-
 }
